@@ -46,7 +46,7 @@ from collections import defaultdict
 # ---------------------------------------------------------------------------
 
 import os
-API_URL = os.environ.get("MEMORIA_URL", "http://localhost:8000")
+API_URL = os.environ.get("MEMORIA_URL", "https://memoria-puzzle.up.railway.app")
 
 
 # ---------------------------------------------------------------------------
