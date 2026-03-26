@@ -30,7 +30,7 @@ from solver import (
 
 HEADER = """
 ╔══════════════════════════════════════╗
-║           M E M O R I A              ║
+║            M E M O R I A             ║
 ╠══════════════════════════════════════╣
 ║  A memory contradiction puzzle box   ║
 ╚══════════════════════════════════════╝
@@ -345,9 +345,9 @@ class TutorialREPL:
 
         # Detect mastery (0.90)
         if result.get("mastered"):
-            print("\n  ╔══════════════════════════════════════╗")
-            print("  ║         PUZZLE MASTERED                ║")
-            print("  ╚══════════════════════════════════════╝")
+            print("\n  ╔═════════════════════════════════════╗")
+            print("  ║           PUZZLE MASTERED           ║")
+            print("  ╚═════════════════════════════════════╝")
             if result.get("message"):
                 print(f"\n  \"{result['message']}\"")
             print("\n  Type 'solution' to see the full answer key.")
@@ -356,9 +356,9 @@ class TutorialREPL:
         elif result.get("solved") and self.phase == "policy":
             self.phase = "code"
             self._ensure_custom_solver()
-            print("\n  ╔══════════════════════════════════════╗")
-            print("  ║         PUZZLE SOLVED                 ║")
-            print("  ╚══════════════════════════════════════╝")
+            print("\n  ╔═════════════════════════════════════╗")
+            print("  ║            PUZZLE SOLVED            ║")
+            print("  ╚═════════════════════════════════════╝")
             if result.get("message"):
                 print(f"\n  \"{result['message']}\"")
             print("\n  ── Phase 2: Write your own reconciliation logic ──")
